@@ -1,0 +1,46 @@
+@media (max-width: 680px) {
+    .head-content h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .head img {
+        width: 100%; /* Full width for header image */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .introduction {
+        width: 90%; /* Increase width for better readability */
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .parent {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        grid-template-rows: auto; /* Adjust rows to fit content */
+    }
+
+    .parent img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .contact p {
+        width: 90%; /* Increase width for better readability */
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .ok button {
+        width: 180px; /* Adjust button width */
+        height: 40px; /* Adjust button height */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .foot {
+        height: auto; /* Allow footer to adjust based on content */
+        padding: 10px 0; /* Adjust padding */
+    }
+
+    .link {
+        flex-direction: column; /* Stack links vertically */
+        gap: 20px; /* Adjust spacing */
+    }
+}

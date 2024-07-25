@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: "Barlow", cursive;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.head{
+    position: relative;
+}
+
+.head img{
+    width: 100%;
+}
+
+.head-content{
+    
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: rgb(166, 123, 206);
+    font-family: 'Barlow', cursive;
+}
+.pro{
+    text-decoration: underline;
+    
+}
+
+.hero img{
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+.introduction{
+    font-size: 20px;
+    margin:auto;
+    width: 30%;
+}
+
+.container a{
+    font-size: 25px;
+    color: lightseagreen;
+}
+
+.container a:hover{
+    color: black;
+}
+
+hr{
+    border: 6px dotted rgb(193, 228, 241) ;
+    margin: 100px auto;
+    width: 20%;
+    border-bottom: none;
+}
+
+.parent{
+    display: grid;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: 200px 500px;
+    gap: 30px;
+    text-align: left;
+
+    /* margin: 100 auto 0 auto; */
+}
+
+.skills h1{
+    font-size: 40px;
+}
+
+.parent h2{
+    margin: 0;
+}
+
+.contact p{
+    margin: 40px auto 40px;
+    width: 45%;
+    font-size: 20px;
+}
+
+.contact{
+    color: lightseagreen;
+    margin-bottom: 100px;
+}
+
+.ok button{
+    background-color: rgb(158, 226, 226);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    
+    font-weight: bold;
+}
+
+.ok a{
+    text-decoration: none;
+    color: white;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background:#111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: 
+transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: 0#46a7aa;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.foot{
+    background-color: lightskyblue;
+    width: 100%;
+    height: 120px;
+    padding: 20px 0 0 0;
+}
+
+.link{
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.link a{
+    color: rgb(45, 85, 131);
+}
+
+.link a:hover{
+    cursor: pointer;
+    color: white
+}
+
+.end{
+    padding: 20px 0 0 0;
+    font-size: 15px;
+    color: white;
+}
+
+@media (max-width: 680px){
+    .head img{
+        width: 100%;
+        height: auto;
+    }
+
+    .head h1{
+        font-size: 2rem;
+    }
+
+    .introduction{
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .parent{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-left: 10px;
+    }
+
+    .parent img{
+        width: 100%;
+        height: auto;
+    }
+
+    .code {
+        padding-left: 10px;
+        
+    }
+
+    .contact p{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .ok button{
+        width: 160px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .link{
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .foot{
+        height: auto;
+        padding: 5px;
+    }
+
+}
